@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:background="@drawable/bg_linear_layout"
+    android:orientation="vertical"
+    android:layout_marginBottom="50dp"
+    android:layout_marginTop="50dp"
+    android:id="@+id/ll">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:text="Sucesso!"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:text="Esse é um exemplo de um \nAlertDialog customizado!"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"/>
+
+</LinearLayout>
+
+    <ImageView android:layout_height="60dp"
+        android:layout_width="60dp"
+        app:layout_constraintTop_toTopOf="@id/ll"
+        app:layout_constraintStart_toStartOf="@id/ll"
+        app:layout_constraintEnd_toEndOf="@id/ll"
+        android:background="@drawable/bg_iv"
+        app:layout_constraintBottom_toTopOf="@id/ll"
+        android:padding="8dp"
+        android:src="@drawable/ic_check"/>
+
+    <Button android:layout_height="50dp"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="@id/ll"
+        app:layout_constraintEnd_toEndOf="@id/ll"
+        app:layout_constraintBottom_toBottomOf="@id/ll"
+        android:background="@color/colorGreen"
+        android:id="@+id/btn_confirm"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="Confirmar"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ll"
+        android:textAllCaps="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
